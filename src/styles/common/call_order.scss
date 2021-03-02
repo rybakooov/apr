@@ -1,0 +1,53 @@
+.body-overflow {
+  max-height: 100vh;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.header-form {
+  display: none;
+}
+.header-form {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  .contact {
+    padding: 40px 0;
+    width: 720px;
+    margin: 100px auto;
+    &-wrap {
+      justify-content: flex-start;
+      flex-direction: column;
+      &-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 100%;
+        .left__title {
+          margin-bottom: 0;
+        }
+      }
+      &-right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.header-form.opened {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .header-form {
+    .contact {
+      width: 328px;
+    }
+  }
+}

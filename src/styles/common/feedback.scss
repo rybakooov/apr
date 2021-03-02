@@ -1,0 +1,124 @@
+.feedback {
+  margin: 132px 0 120px;
+  &-wrap {
+    .news-wrap-bot {
+      display: none;
+    }
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 38px;
+      &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 115%;
+        color: #111111;
+      }
+      &__btn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125%;
+        color: #111111;
+        border: 1px solid #111111;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 9px 20px;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+    &-bottom {
+      &-item {
+        border: 1px solid #E1E1E1;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 24px;
+        margin-bottom: 24px;
+        &:hover {
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+          transition: .3s;
+        }
+        .item-person {
+          display: flex;
+          padding-bottom: 24px;
+          border-bottom: 1px solid #E1E1E1;
+          &__img {
+            border-radius: 50%;
+            margin-right: 8px;
+          }
+          &-info {
+            &__name {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #000000;
+              margin-bottom: 8px;
+            }
+            &__date {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 125%;
+              color: #828282;
+            }
+          }
+        }
+        .item-text {
+          padding-top: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .feedback {
+    &-wrap {
+      margin-bottom: 120px;
+      &-bottom {
+        &-item {
+          padding: 16px;
+          &:not(:nth-child(-n+3)) {
+            display: none;
+          }
+        }
+      }
+      .news-wrap-bot {
+        display: block;
+      }
+      .grid {
+        width: 100%;
+        .grid-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feedback {
+    margin-bottom: 80px;
+    &-wrap {
+      margin-bottom: 0;
+      &-top {
+        &__title {
+          font-size: 24px;
+        }
+        &__btn {
+          display: none;
+        }
+      }
+      &-bottom {
+        &-item {
+          .item-person {
+            padding-bottom: 16px;
+          }
+          .item-text {
+            padding-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}

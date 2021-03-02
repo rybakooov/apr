@@ -1,0 +1,22 @@
+extends ../template
+block title
+  | АПР - Контакты
+block content
+  include ../common/header
+  section.news
+    .container
+      .news-wrap
+        .news-wrap-top
+          .news-wrap-top__title Блог
+          .news-wrap-top__text  Читайте свежие новости, статьи и заметки о юриспруденции,<br> законах и строительной экспертизы от нашего агентства
+        include ../common/blog
+        include ../common/blog
+        include ../common/blog
+        .news-wrap-bot
+          button.news-wrap-bot-more
+            p Показать еще
+            .news-wrap-bot-more__plus
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 8V4M4 0V4M4 4H8M4 4H0" stroke="#BABABA"/>
+              </svg>
+  include ../common/footer

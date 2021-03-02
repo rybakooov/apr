@@ -1,0 +1,34 @@
+extends ../template
+block title
+  | АПР
+block content
+  include ../common/header
+  include ../common/intro_legal
+  section.serv-list
+    .container
+      .services
+        .services-top
+          .services-top__title.services-top__title_1  Услуги cтроительной экспертизы
+          .services-top__title.services-top__title_2.active  Юридические услуги
+          .services-tabs
+            button(data-tab="1").services-tabs__item Строительная экспертиза
+            button(data-tab="2").services-tabs__item.active Юридические услуги
+        include ../common/services
+  include ../common/about
+  section.feedback
+    .container
+      .feedback-wrap
+        .feedback-wrap-top
+          .feedback-wrap-top__title Отзывы
+          a.feedback-wrap-top__btn.btn__white(href="#") Читать все отзывы
+        include ../common/feedback
+  include ../common/contact_us
+  section.blog
+    .container
+      .blog-wrap
+        .blog-wrap-top
+          .blog-wrap-top__title Блог
+          a.blog-wrap-top__more.btn__white(href="#") Читать все статьи
+        include ../common/blog
+  include ../common/footer
+  include ../common/call_order

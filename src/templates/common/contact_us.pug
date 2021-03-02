@@ -1,0 +1,25 @@
+section.contact
+  .container
+    .contact-wrap
+      .contact-wrap-left
+        .contact-wrap-left__title  Свяжитесь с нами
+        .contact-wrap-left__text Пишите на почту <a href="mailto: juriscentr@gmail.com">juriscentr@gmail.com</a><br>и звоните по телефону <a href="tel: +7 (4852) 33-60-12">+7 (4852) 33-60-12</a>
+      .contact-wrap-right
+        form.contact-form(action="mailto:hold@mail.ru" name="contact" enctype="text/plain")
+          .contact-form-top
+            .contact-form-top__item
+              label(for="name") Имя
+              input(type="text" name="name" placeholder="Иван Иванов" id="name")
+            .contact-form-top__item
+              label(for="tel") Телефон
+              input(type="tel" name="tel" placeholder="8 (999) 999-99-99" id="tel")
+            .contact-form-top__item
+              label(for="text") Сообщение
+              input(type="text" name="text" placeholder="Хочу уйти от штатной бухгалтерии" id="text")
+          .contact-form-bot
+            label.contact-form-bot__agree
+              input(type="checkbox" value="agree" id="agreement")
+              .contact-form-bot__agree-box
+              p Я согласен с политикой конфиденциальности
+            button(type="submit").contact-form-bot__btn.btn__orange-dark Отправить сообщение
+          

@@ -1,0 +1,28 @@
+.header-form
+  section.contact
+    .container
+      .contact-wrap
+        .contact-wrap-left
+          .contact-wrap-left__title  Заказать звонок
+          .contact-wrap-left__close
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 15L8 8M15 1L8 8M8 8L1 1M8 8L15 15" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        .contact-wrap-right
+          form(action="mailto:hold@mail.ru" name="contact" enctype="text/plain").contact-form
+            .contact-form-top
+              .contact-form-top__item
+                label(for="name") Имя
+                input(type="text" name="name" placeholder="Иван Иванов" id="name")
+              .contact-form-top__item
+                label(for="tel") Телефон
+                input(type="tel" name="tel" placeholder="8 (999) 999-99-99" id="tel")
+              .contact-form-top__item
+                label(for="text") Сообщение
+                input(type="text" name="text" placeholder="Хочу уйти от штатной бухгалтерии" id="text")
+            .contact-form-bot
+              label.contact-form-bot__agree
+                input(type="checkbox" value="agree" id="agreement")
+                .contact-form-bot__agree-box
+                p Я согласен с политикой конфиденциальности
+              button(type="submit").contact-form-bot__btn.btn__orange-dark Отправить сообщение
